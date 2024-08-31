@@ -1,109 +1,67 @@
 section_title: Join us
 
 price_cards:
-  - title: Subscribe
-    sub_title: Best deal
-    price: $28/m
+  - title: Basic Cooking Essentials
+    sub_title:
+    price: $49/m
     price_linethrough:
     benefit_list:
-      - benefit: Two online 60 minute sessions
+      - benefit: Two online 60-minute cooking classes
         bold: true
-      - benefit: Sound journey and meditations
+      - benefit: Basic knife skills tutorial
         bold: false
-      - benefit: Sacred opening prayer
+      - benefit: Introduction to meal planning
         bold: false
-      - benefit: Cacao activation
+      - benefit: Access to beginner recipes
         bold: false
-      - benefit: Supportive community & environment
+      - benefit: Supportive community
         bold: false
       - benefit: On-demand access to recorded sessions
         bold: false
-      - benefit: Access exclusive monthly content
-        bold: false
     cta_text: Subscribe
-    cta_url: https://checkout.square.site/merchant/ML6ZR24APWSAH/checkout/WSRYIDTLIAF2N33XDA7DX2VR
-    full_width: true
-  - title: 1 Session
-    sub_title:
-    price: $244
-    price_linethrough: $288
-    benefit_list:
-      - benefit: Choose one online 90 minute sessions
-        bold: true
-      - benefit: Sound journey and meditations
-        bold: false
-      - benefit: Breath journey
-        bold: false
-      - benefit: Cacao session
-        bold: false
-      - benefit: Gong lesson
-        bold: false
-      - benefit: Reiki and sound journey
-        bold: false
-      - benefit: Cacao, breathwork and sound journey
-        bold: false
-    cta_text: Purchase
-    cta_url: https://checkout.square.site/merchant/ML6ZR24APWSAH/checkout/FRAOZYEINIVAUNI25JCKH2UH
+    cta_url: https://axyscreative.com
     full_width: false
-  - title: 3 Sessions
-    sub_title: Most popular
-    price: $699
-    price_linethrough: $764
-    benefit_list:
-      - benefit: Choose three online 90 minute sessions
-        bold: true
-      - benefit: Sound journey and meditations
-        bold: false
-      - benefit: Breath journey
-        bold: false
-      - benefit: Cacao session
-        bold: false
-      - benefit: Gong lesson
-        bold: false
-      - benefit: Reiki and sound journey
-        bold: false
-      - benefit: Cacao, breathwork and sound journey
-        bold: false
-    cta_text: Purchase
-    cta_url: https://checkout.square.site/merchant/ML6ZR24APWSAH/checkout/HDJAWE4MD6KNC5CVDJN67GZS
-    full_width: false
-  - title: 5 Sessions
-    sub_title:
-    price: $1,111
-    price_linethrough: $1,444
-    benefit_list:
-      - benefit: Choose five online 90 minute sessions
-        bold: true
-      - benefit: Sound journey and meditations
-        bold: false
-      - benefit: Breath journey
-        bold: false
-      - benefit: Cacao session
-        bold: false
-      - benefit: Gong lesson
-        bold: false
-      - benefit: Reiki and sound journey
-        bold: false
-      - benefit: Cacao, breathwork and sound journey
-        bold: false
-    cta_text: Purchase
-    cta_url: https://checkout.square.site/merchant/ML6ZR24APWSAH/checkout/FHVDVGJCO2GMTA5BJXU2C7BO
-    full_width: false
-  - title: Ceremonial Cacao
-    sub_title: 1lb Brick
-    price: $55 PER BRICK
+  - title: Whole Food Mastery
+    sub_title: Best Deal
+    price: $99/m
     price_linethrough:
     benefit_list:
-      - benefit: Madre Tierra Cacao, 1lb Brick
+      - benefit: Four online 90-minute workshops
+        bold: true
+      - benefit: Seasonal eating and sourcing
         bold: false
-      - benefit: Ethically Sourced
+      - benefit: Fermentation techniques
         bold: false
-      - benefit: Ceremonial Grade
+      - benefit: Advanced meal planning
         bold: false
-      - benefit: 100% Organic Cacao
+      - benefit: Personalized nutrition advice
         bold: false
-      - benefit: Family Sourced from Guatemala
+      - benefit: On-demand access to recorded workshops
         bold: false
-    cta_text: Order Now
-    cta_url: https://checkout.square.site/merchant/ML6ZR24APWSAH/checkout/GRI77FLQWQVOAVSPLLGMYFVK
+      - benefit: Exclusive access to monthly content and recipes
+        bold: false
+    cta_text: Subscribe
+    cta_url: https://axyscreative.com
+    full_width: false
+  - title: Ultimate Culinary Experience
+    sub_title:
+    price: $149/m
+    price_linethrough:
+    benefit_list:
+      - benefit: Four online 90-minute premium sessions
+        bold: true
+      - benefit: Comprehensive utensil maintenance guide
+        bold: false
+      - benefit: Advanced batch cooking techniques
+        bold: false
+      - benefit: Personalized coaching sessions
+        bold: false
+      - benefit: Interactive Q&A with culinary experts
+        bold: false
+      - benefit: On-demand access to recorded workshops
+        bold: false
+      - benefit: VIP access to exclusive events and content
+        bold: false
+    cta_text: Subscribe
+    cta_url: https://axyscreative.com
     full_width: true

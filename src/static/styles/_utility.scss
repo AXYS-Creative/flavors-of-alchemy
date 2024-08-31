@@ -1,7 +1,9 @@
 .classic-link {
+  $link-hover-color: var(--primary-accent-color);
   $link-horizontal-padding: 8px;
 
   position: relative;
+  font-weight: 600;
   padding: 4px $link-horizontal-padding;
 
   &::before {
@@ -21,11 +23,11 @@
 
   &:hover,
   &:focus-visible {
-    color: var(--primary-accent-color);
+    color: $link-hover-color;
     transition: color 0.3s ease 0.3s;
 
     &::before {
-      background: var(--primary-accent-color);
+      background: $link-hover-color;
       left: auto;
       right: $link-horizontal-padding;
       width: 0%;

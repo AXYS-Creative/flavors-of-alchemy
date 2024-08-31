@@ -685,7 +685,10 @@ ul {
   flex-shrink: 0;
 
   .cta-1 {
+    $hover-color: var(--secondary-accent-color);
+
     position: relative;
+    font-weight: 600;
     border: 2px solid var(--primary-font-color);
     padding: 12px 24px;
     transition: 0.5s $cubic-ease-sudden;
@@ -696,7 +699,7 @@ ul {
 
     &:hover,
     &:focus-visible {
-      border-color: var(--secondary-accent-color);
+      border-color: $hover-color;
       color: var(--background-color);
 
       &::after {
@@ -714,7 +717,7 @@ ul {
       right: 0;
       width: 0;
       height: 100%;
-      background: var(--secondary-accent-color);
+      background: $hover-color;
       transition: 0.5s $cubic-ease-sudden;
       z-index: -1;
     }

@@ -1,31 +1,31 @@
 section_title: About Us
 
 team_members:
-  - name: Jade Lyons
-    image: /static/img/portrait-jade.png
-    role: Breathwork + Sound Healing Facilitator
+  - name: Jake Ryans
+    image: /static/img/portrait-1.png
+    role: Co-founder & Head of Food Preparation
     social_media:
       - title: Instagram
-        url: https://www.instagram.com/sacredbreathalchemy?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr
+        url: https://www.instagram.com/axyscreative/
         icon: /static/img/icon-instagram-block.svg
       - title: Facebook
-        url: https://www.facebook.com/sacredbreathalchemy
+        url: https://www.instagram.com/axyscreative/
         icon: /static/img/icon-facebook-block.svg
-  - name: Yuki Lyons
-    image: /static/img/portrait-yuki.png
-    role: Cacao + Meditation Facilitator
+  - name: Clyde Ryans
+    image: /static/img/portrait-2.png
+    role: Co-founder & Head of Whole Food Education
     social_media:
       - title: Instagram
-        url: https://www.instagram.com/sacredbreathalchemy?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr
+        url: https://www.instagram.com/axyscreative/
         icon: /static/img/icon-instagram-block.svg
 
 paragraph_details:
-  - description: Through our guidance, you will uncover the healing potential of the breath, finding solace from stress and anxiety while nurturing self-awareness, love, and compassion, all within the sanctuary of your home.
+  - description: With a shared passion for vegan cuisine and a commitment to quality and taste, the Ryan brothers created a business that not only nourishes the body but also celebrates the art of plant-based cooking.
     symbol: 🝮
     color: "gold"
-  - description: The teachings of Sacred Breath Alchemy amalgamate powerful breathwork techniques from various global traditions, offering you immediate integration into your everyday routine.
+  - description: Jake, a seasoned chef with deep roots in European cuisine, brings his flair for bold flavors and innovative food preparation techniques.
     symbol: 🜩
     color: "gold"
-  - description: By embracing these practices, you can enhance relationships, cultivate mental clarity, and discover a profound sense of purpose and direction in life.
+  - description: Clyde, an expert in whole food nutrition with a background in traditional Asian cuisine, complements Jake's style with his knowledge of health and wellness.
     symbol: 🜯
     color: "gold"

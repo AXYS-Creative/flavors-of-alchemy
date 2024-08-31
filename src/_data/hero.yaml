@@ -2,14 +2,14 @@ hero_lists:
   - symbol: "🜾"
     symbol_color: "gold"
     hero_list_items:
-      - title: Transformative Experiences
-      - title: Engaging Community
-      - title: On-Demand Access
-      - title: Embrace Your Journey
+      - title: Seasonal & Local Sourcing
+      - title: Cookware Material Guide
+      - title: Nutrient Dense Meals
+      - title: Batch Cooking
   - symbol: "🜪"
     symbol_color: "gold"
     hero_list_items:
-      - title: Alchemical Breathwork
-      - title: Sacred Sound Healing
-      - title: Heart Opening Cacao Ceremony
-      - title: Meditation Practices
+      - title: Fermentation & Preservation Skills
+      - title: Proper Utensil Care & Handling
+      - title: Eco-Friendly Kitchen Tools
+      - title: Knife Skills & Techniques
