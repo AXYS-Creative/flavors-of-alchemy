@@ -1,6 +1,16 @@
 <section class="services" id="services">
   <h2>
-    Services <span class="alchemy-symbol gold" aria-hidden="true">🝆</span>
+    {{ services_section.section_title }}
+
+    <!-- prettier-ignore -->
+    {% if services_section.title_symbol%}
+    <span
+      class="alchemy-symbol {{ services_section.title_symbol_color }}"
+      aria-hidden="true"
+    >
+      {{services_section.title_symbol}}
+    </span>
+    {% endif %}
   </h2>
 
   {% for service in services_section.services %}
@@ -12,7 +22,10 @@
     />
     <h3 class="h4 service-block__title">
       {{ service.title }}
-      <span class="alchemy-symbol pink" aria-hidden="true">
+      <span
+        class="alchemy-symbol {{ service.symbol_color }}"
+        aria-hidden="true"
+      >
         {{ service.symbol }}
       </span>
     </h3>
@@ -21,7 +34,7 @@
       href="#bundles"
       class="service-block__link classic-link tab-element-page"
     >
-      Book Now
+      Book now
     </a>
   </div>
   {% endfor %} {% include "./cta-wrapper.html" %}

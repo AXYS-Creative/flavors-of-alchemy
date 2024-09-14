@@ -1,5 +1,5 @@
 ---
-title: ALCHEMY FLAVOR
+title: FLAVORS OF ALCHEMY
 description: Discover the art of vegan cooking with [Your Business Name]. Our website offers a range of services designed to elevate your culinary journey, from hands-on food preparation courses to comprehensive whole food education and expert utensil maintenance workshops. Whether you're new to plant-based living or a seasoned cook, our team of culinary experts provides the tools, knowledge, and support you need to create delicious, nourishing meals. Explore our classes, shop our gourmet products, and join a community dedicated to quality, taste, and sustainable living.
 author: Flavors of Alchemy
 
@@ -11,7 +11,8 @@ path: home
   <!-- <h1 class="h1">
     <span class="alchemy-symbol gold">🝖</span>
     <span class="word-split">
-      Craft your culinary journey through taste and quality
+      Craft your culinary [%br.md-screen-and-up%] journey through taste
+      [%br.md-screen-and-up%] and quality
     </span>
     <span class="alchemy-symbol pink">🜹</span>
   </h1> -->
@@ -25,14 +26,14 @@ path: home
           <span class="alchemy-symbol gold">🝖</span>
           <span class="hero-h1__word">Craft</span>
           <span class="hero-h1__word">your</span>
-          <span class="hero-h1__word">culinary&nbsp;</span>
+          <span class="hero-h1__word">culinary</span>
           <br />
         </span>
         <span class="hero-h1__line-inner hero-h1__line-inner-1">
           <span class="alchemy-symbol gold">🝖</span>
           <span class="hero-h1__word">Craft</span>
           <span class="hero-h1__word">your</span>
-          <span class="hero-h1__word">culinary&nbsp;</span>
+          <span class="hero-h1__word">culinary</span>
           <br />
         </span>
       </span>
@@ -41,13 +42,13 @@ path: home
         <span class="hero-h1__line-inner hero-h1__line-inner-2">
           <span class="hero-h1__word">journey</span>
           <span class="hero-h1__word">through</span>
-          <span class="hero-h1__word text-stroke">taste </span>
+          <span class="hero-h1__word text-stroke">taste</span>
           <br />
         </span>
         <span class="hero-h1__line-inner hero-h1__line-inner-2">
           <span class="hero-h1__word">journey</span>
           <span class="hero-h1__word">through</span>
-          <span class="hero-h1__word text-stroke">taste </span>
+          <span class="hero-h1__word text-stroke">taste</span>
           <br />
         </span>
       </span>
@@ -55,12 +56,12 @@ path: home
       <span class="hero-h1__line hero-h1__line-3">
         <span class="hero-h1__line-inner hero-h1__line-inner-3">
           <span class="hero-h1__word">and</span>
-          <span class="hero-h1__word text-stroke">quality </span>
+          <span class="hero-h1__word text-stroke">quality</span>
           <span class="alchemy-symbol pink">🜹</span>
         </span>
         <span class="hero-h1__line-inner hero-h1__line-inner-3">
           <span class="hero-h1__word">and</span>
-          <span class="hero-h1__word text-stroke">quality </span>
+          <span class="hero-h1__word text-stroke">quality</span>
           <span class="alchemy-symbol pink">🜹</span>
         </span>
       </span>
@@ -96,12 +97,12 @@ path: home
       <span class="hero-h1__line hero-h1__line-3b">
         <span class="hero-h1__line-inner hero-h1__line-inner-3b">
           <span class="hero-h1__word">through</span>
-          <span class="hero-h1__word text-stroke">taste </span>
+          <span class="hero-h1__word text-stroke">taste</span>
           <br />
         </span>
         <span class="hero-h1__line-inner hero-h1__line-inner-3b">
           <span class="hero-h1__word">through</span>
-          <span class="hero-h1__word text-stroke">taste </span>
+          <span class="hero-h1__word text-stroke">taste</span>
           <br />
         </span>
       </span>
@@ -109,12 +110,12 @@ path: home
       <span class="hero-h1__line hero-h1__line-4b">
         <span class="hero-h1__line-inner hero-h1__line-inner-4b">
           <span class="hero-h1__word">and</span>
-          <span class="hero-h1__word text-stroke">quality </span>
+          <span class="hero-h1__word text-stroke">quality</span>
           <span class="alchemy-symbol pink">🜹</span>
         </span>
         <span class="hero-h1__line-inner hero-h1__line-inner-4b">
           <span class="hero-h1__word">and</span>
-          <span class="hero-h1__word text-stroke">quality </span>
+          <span class="hero-h1__word text-stroke">quality</span>
           <span class="alchemy-symbol pink">🜹</span>
         </span>
       </span>
@@ -158,7 +159,17 @@ path: home
 
 <section class="bundles" id="bundles">
   <h2>
-    {{ bundles.section_title }} <span class="alchemy-symbol gold">🜊</span>
+    {{ bundles.section_title }}
+
+    <!-- prettier-ignore -->
+    {% if bundles.title_symbol%}
+    <span
+      class="alchemy-symbol {{ bundles.title_symbol_color }}"
+      aria-hidden="true"
+    >
+      {{bundles.title_symbol}}
+    </span>
+    {% endif %}
   </h2>
 
   <div class="bundle-cards-wrapper">
@@ -169,10 +180,12 @@ path: home
         <small>{{ card.sub_title }}</small>
         {% endif %}
       </h3>
+      <!-- prettier-ignore -->
       <h4
         class="price"
-        aria-label="
-        {% if card.price_linethrough %}Original price: {{ card.price_linethrough }}, Limited offer: {{ card.price }}.{% endif %}"
+        {% if card.price_linethrough %} 
+        aria-label="Original price: {{ card.price_linethrough }}, Limited offer: {{ card.price }}."
+        {% endif %}
       >
         {% if card.price_linethrough %}
         <span class="price-dim" aria-hidden="true">
@@ -215,9 +228,9 @@ path: home
 {% set symbol_start = text_block_2.symbol_start %}
 {% set symbol_end = text_block_2.symbol_end %}
 {% set cta_1_text = "Get Tickets" %}
-{% set cta_1_url = "#" %}
+{% set cta_1_url = "#bundles" %}
 {% set cta_2_text = "View FAQ" %}
-{% set cta_2_url = "#" %}
+{% set cta_2_url = "#faq" %}
 {% set preview_id = "events" %} 
 {% include "./_includes/partials/text-block.html" %}
 

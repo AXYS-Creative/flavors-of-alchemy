@@ -1,10 +1,15 @@
+{% if faq.show_section %}
 <section class="faq" id="faq">
   <div class="faq-title-wrapper">
     <h2>
       {{ faq.section_title }}
+
+      <!-- prettier-ignore -->
+      {% if faq.title_symbol%}
       <span class="alchemy-symbol {{ faq.title_symbol_color }}">
-        {{ faq.section_title_symbol }}
+        {{ faq.title_symbol }}
       </span>
+      {% endif %}
     </h2>
 
     <p>
@@ -15,8 +20,8 @@
     </p>
   </div>
 
-  <div class="faq-list">
-    {% for item in faq.faq_list %}
+  <div class="faq-list {% if faq.faq_behavior_single %}single-faq{% endif %}">
+    {% for item in faq.faq_items %}
     <div class="faq-item">
       <button
         class="question tab-element-page"
@@ -44,3 +49,4 @@
     {% endfor %}
   </div>
 </section>
+{% endif %}

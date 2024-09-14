@@ -1,6 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 let responsiveGsap = gsap.matchMedia();
 
+let markers = {
+  startColor: "white",
+  endColor: "white",
+  indent: 128,
+};
+let markersAlt = {
+  startColor: "yellow",
+  endColor: "yellow",
+  indent: 64,
+};
+
 // Responsive GSAP aniamtions.
 responsiveGsap.add(
   {
@@ -83,34 +94,66 @@ const animationLibrary = (() => {
     });
   })();
 
-  // Animating each word via 'word-split' utility class. Also add 'gsap-animate' to the element.
-  const wordSplit = (() => {
-    const spanWordsInParagraph = (paragraph) => {
-      const text = paragraph.textContent || paragraph.innerText;
-      const words = text.trim().split(/\s+/);
+  // // GLOBAL - Nest each word in a sentence within a <span> tag via 'word-span' utility class.
+  // const wordSpan = (() => {
+  //   const spanWordsInParagraph = (paragraph) => {
+  //     const text = paragraph.textContent || paragraph.innerText;
+  //     const words = text.trim().split(/\s+/);
 
-      const wrappedWords = words
-        .map(
-          (word) =>
-            `<span class="outer-span">
-                  <span class="inner-span">${word}</span>
-                  <span class="inner-span">${word}</span>
-                </span>`
-        )
-        .join(" ");
+  //     const wrappedWords = words
+  //       .map((word) => `<span class="word-span__span">${word}</span>`)
+  //       .join(" ");
 
-      paragraph.innerHTML = wrappedWords;
-    };
+  //     paragraph.innerHTML = wrappedWords;
+  //   };
 
-    const applyWordWrappingToAll = (globalClass) => {
-      const paragraphs = document.querySelectorAll(globalClass);
-      paragraphs.forEach((paragraph) => spanWordsInParagraph(paragraph));
-    };
+  //   const applyWordWrappingToAll = (globalClass) => {
+  //     const paragraphs = document.querySelectorAll(globalClass);
+  //     paragraphs.forEach((paragraph) => spanWordsInParagraph(paragraph));
+  //   };
 
-    applyWordWrappingToAll(".word-split");
-  })();
+  //   applyWordWrappingToAll(".word-span");
+  // })();
 
-  // SCOPED - Hero Sliding Text - Animating per line (smoother)
+  // // GLOBAL - Meant for the hero and pre-footer. Animating each word via 'word-split' utility class. Files: index.html, home.scss, & utility.scss
+  // const mirageSplit = (() => {
+  //   const splitWordsInParagraph = (paragraph) => {
+  //     const text = paragraph.textContent || paragraph.innerText;
+
+  //     // Regex pattern to detect tokens like [%br%] and similar
+  //     const tokenRegex = /\[%[^\]]+%\]/g;
+
+  //     // Split words, but keep tokens intact by using a regex split
+  //     const words = text.trim().split(/\s+/);
+
+  //     const wrappedWords = words
+  //       .map((word) => {
+  //         // Skip wrapping if the word is a token
+  //         if (tokenRegex.test(word)) {
+  //           return word; // Leave the token as is, no wrapping
+  //         }
+
+  //         // Wrap non-token words in spans
+  //         return `
+  //         <span class="outer-span">
+  //           <span class="inner-span">${word}</span>
+  //           <span class="inner-span">${word}</span>
+  //         </span>`;
+  //       })
+  //       .join(" ");
+
+  //     paragraph.innerHTML = wrappedWords;
+  //   };
+
+  //   const applyWordSplittingToAll = (globalClass) => {
+  //     const paragraphs = document.querySelectorAll(globalClass);
+  //     paragraphs.forEach((paragraph) => splitWordsInParagraph(paragraph));
+  //   };
+
+  //   applyWordSplittingToAll(".word-split");
+  // })();
+
+  // SCOPED - Hero Sliding Text - Animating per line (smoother) ... Should be able to gauge the distance to apply the line...
   const mirageText = (() => {
     const lines = [
       {

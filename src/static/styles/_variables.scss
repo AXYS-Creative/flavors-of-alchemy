@@ -1,8 +1,5 @@
-// $font-family-heading: "Plus Jakarta Sans", sans-serif;
-$font-family-body: "Plus Jakarta Sans", sans-serif;
-
 $font-family-heading: "Proxima Nova", sans-serif;
-// $font-family-body: "Proxima Nova", sans-serif;
+$font-family-body: "Plus Jakarta Sans", sans-serif;
 
 $black: #313131;
 $grey-dark: #313131;
@@ -25,6 +22,8 @@ $cubic-ease-slow-finish: cubic-bezier(0.09, 0.9, 0.5, 1);
   --primary-accent-color: #{$gold};
   --secondary-accent-color: #{$pink};
 
+  --link-weight: 600;
+
   // --link-color: #{$grey-light};
   // --link-color-hover: #{$white};
 }
@@ -43,6 +42,7 @@ $content-width: 1920px;
 $body-padding: 64px;
 $body-padding-xxl: 40px;
 $body-padding-md: 24px;
+$body-padding-sm: 12px;
 
 $section-title-vertical-spacing: 96px;
 $section-title-vertical-spacing-xxl: 64px;

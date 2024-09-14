@@ -1,8 +1,10 @@
 section_title: About Us
+title_symbol: 🝢
+title_symbol_color: "gold"
 
 team_members:
   - name: Jake Ryans
-    image: /static/img/portrait-1.png
+    image: /static/img/portrait-1.avif
     role: Co-founder & Head of Food Preparation
     social_media:
       - title: Instagram
@@ -12,7 +14,7 @@ team_members:
         url: https://www.instagram.com/axyscreative/
         icon: /static/img/icon-facebook-block.svg
   - name: Clyde Ryans
-    image: /static/img/portrait-2.png
+    image: /static/img/portrait-2.avif
     role: Co-founder & Head of Whole Food Education
     social_media:
       - title: Instagram

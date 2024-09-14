@@ -1,12 +1,14 @@
+show_section: true
+
 section_title: FAQ
-section_title_symbol: 🝰
+title_symbol: 🝌
 title_symbol_color: "gold"
 
 section_description: Find the answers to your most pressing questions about our vegan culinary courses, whole food education, and utensil maintenance workshops. Discover how our services can enhance your cooking journey and support a plant-based lifestyle focused on quality and taste.
 section_description_symbol: 🝮
 description_symbol_color: "gold"
 
-faq_list:
+faq_items:
   - question: What types of food preparation courses do you offer?
     answer: We offer a range of food preparation courses, from beginner to advanced levels, focusing on vegan cuisine. Our courses cover everything from basic knife skills to advanced batch cooking and meal planning.
   - question: Are your classes available online, or do I need to attend in person?
@@ -21,3 +23,5 @@ faq_list:
     answer: Absolutely! We welcome individuals of all skill levels. Our courses and workshops are designed to be accessible, whether you’re new to vegan cooking or looking to refine your existing skills.
   - question: Do you provide all the ingredients and tools needed for the workshops?
     answer: For our in-person classes, all necessary ingredients and tools are provided. For online classes, we will send you a list of recommended ingredients and tools to have on hand, along with options for sourcing them.
+
+faq_behavior_single: false

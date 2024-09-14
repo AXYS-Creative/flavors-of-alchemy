@@ -12,8 +12,11 @@
     <!-- Open Graph Tags -->
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="{{ open_graph.item.image_src }}" />
-    <meta property="og:url" content="essentialism.netlify.app" />
+    <meta
+      property="og:image"
+      content="https://sacredbreathalchemy.netlify.app/static/img/open-graph-image.png"
+    />
+    <meta property="og:url" content="https://sacredbreathalchemy.netlify.app" />
     <meta property="og:description" content="{{ description }}" />
     <meta property="og:site_name" content="{{ author }}" />
 
@@ -40,14 +43,12 @@
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "AXYS Creative",
-        "url": "https://axyscreative.com",
-        "logo": "https://axyscreative.com/public/axys-logo-192.png",
-        "image": "https://axyscreative.com/public/axys-creative-og.png",
+        "name": "Flavors of Alchemy",
+        "url": "https://sacredbreathalchemy.netlify.app",
+        "logo": "https://sacredbreathalchemy.netlify.app/static/img/logo-light.svg",
+        "image": "https://sacredbreathalchemy.netlify.app/static/img/open-graph-image.png",
         "sameAs": [
-          "https://www.instagram.com/axyscreative/",
-          "https://twitter.com/AXYSCreative",
-          "https://dribbble.com/axyscreative"
+          "https://www.instagram.com/sacredbreathalchemy?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr"
         ],
         "contactPoint": {
           "@type": "ContactPoint",
@@ -66,14 +67,17 @@
     <!-- prettier-ignore -->
 
     <div class="mouse-cursor" aria-hidden="true"></div>
+    <canvas class="particles" aria-hidden="true"></canvas>
 
-    {% if path == "home" %}
     <!-- Netlify Identity Widget -->
+    {% if path == "home" %}
     <script
       type="text/javascript"
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
     {% endif %}
+
+    <!-- Scripts -->
     <script src="/static/js/alpine.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -87,5 +91,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
   </body>
 </html>

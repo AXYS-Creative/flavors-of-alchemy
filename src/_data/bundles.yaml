@@ -1,4 +1,6 @@
-section_title: Join us
+section_title: Join Us
+title_symbol: 🜊
+title_symbol_color: "gold"
 
 price_cards:
   - title: Basic Cooking Essentials
@@ -23,8 +25,8 @@ price_cards:
     full_width: false
   - title: Whole Food Mastery
     sub_title: Best Deal
-    price: $99/m
-    price_linethrough:
+    price: $89/m
+    price_linethrough: $99/m
     benefit_list:
       - benefit: Four online 90-minute workshops
         bold: true

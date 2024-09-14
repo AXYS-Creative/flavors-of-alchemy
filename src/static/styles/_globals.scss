@@ -86,10 +86,20 @@ body {
 
       .marquee-slider {
         display: flex;
-        animation: marquee 36s linear infinite;
+        animation: marquee 40s linear infinite;
 
-        @include mq-motion-reduce {
-          animation: marquee 60s linear infinite;
+        @media all {
+          @include mq-motion-reduce {
+            animation-duration: 48s;
+          }
+
+          @include mq-max("xxl") {
+            animation-duration: 32s;
+          }
+
+          @include mq-max("sm") {
+            animation-duration: 12s;
+          }
         }
       }
 
@@ -196,15 +206,20 @@ body {
     }
 
     &__icon {
-      width: 196px;
-      transition: 0.2s ease;
+      width: 162px;
+      height: 36px;
+      object-fit: cover;
+      object-position: left;
+      transition: 0.3s ease;
 
       @include mq-max("xxl") {
-        width: 148px;
+        width: 126px;
+        height: 28px;
       }
 
       @include mq-max("sm") {
-        width: 128px;
+        width: 108px;
+        height: 24px;
       }
     }
   }
@@ -329,11 +344,19 @@ body {
   }
 
   &.away-from-top {
-    // .header-logo {
-    //   .logo-text {
-    //     width: 0px;
-    //   }
-    // }
+    .header-logo {
+      &__icon {
+        width: 48px;
+
+        @include mq-max("xxl") {
+          width: 36px;
+        }
+
+        @include mq-max("sm") {
+          width: 28px;
+        }
+      }
+    }
 
     .header-links {
       translate: 0 -480%;
@@ -685,12 +708,10 @@ ul {
   flex-shrink: 0;
 
   .cta-1 {
-    $hover-color: var(--secondary-accent-color);
-
     position: relative;
-    font-weight: 600;
     border: 2px solid var(--primary-font-color);
     padding: 12px 24px;
+    font-weight: var(--link-weight);
     transition: 0.5s $cubic-ease-sudden;
 
     @include mq-max("md") {
@@ -699,7 +720,7 @@ ul {
 
     &:hover,
     &:focus-visible {
-      border-color: $hover-color;
+      border-color: var(--secondary-accent-color);
       color: var(--background-color);
 
       &::after {
@@ -717,7 +738,7 @@ ul {
       right: 0;
       width: 0;
       height: 100%;
-      background: $hover-color;
+      background: var(--secondary-accent-color);
       transition: 0.5s $cubic-ease-sudden;
       z-index: -1;
     }
@@ -819,7 +840,40 @@ ul {
   }
 
   &.cursor-contrast {
-    opacity: 0.25;
+    opacity: 0.2;
     width: min(18vw, 380px);
+  }
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  // opacity: 0.5;
+  opacity: 0;
+  animation: particle-fade 0.8s ease 2.4s forwards;
+
+  @include mq-max("sm") {
+    // opacity: 0.75;
+    animation: particle-fade-sm 0.8s ease 2.4s forwards;
+  }
+
+  @keyframes particle-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes particle-fade-sm {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.75;
+    }
   }
 }

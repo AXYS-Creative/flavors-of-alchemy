@@ -1,3 +1,5 @@
+import { maxXxl, maxSm } from "../utility.js";
+
 const siteHeader = document.querySelector(".site-header"),
   headerBanner = document.querySelector(".header-banner");
 
@@ -13,7 +15,21 @@ if (headerBanner) {
     siteHeader.classList.add("show-banner");
   }, 4200);
 
-  // temp banner message for dynamic discount date
+  const handleMarquee = (() => {
+    const marqueeSliders = document.querySelectorAll(".marquee-slider");
+
+    marqueeSliders.forEach((marqueeSlider) => {
+      const clonedContent = marqueeSlider.innerHTML;
+
+      const repetitions = maxSm ? 0 : maxXxl ? 2 : 4; // Number of times to duplicate the content
+      for (let i = 0; i < repetitions; i++) {
+        marqueeSlider.innerHTML += clonedContent;
+      }
+    });
+  })();
+
+  //
+  // Template Banner Message (dynamic exp. date)
   const templateBannerMessage = (() => {
     const getEndDate = () => {
       const today = new Date();

@@ -1,13 +1,13 @@
 images:
-  - src: /static/img/slider-image-1.png
+  - src: /static/img/slider-image-1.avif
     description: A man handling a steaming pot.
-  - src: /static/img/slider-image-2.png
+  - src: /static/img/slider-image-2.avif
     description: The Ryan brothers preping their kitchen.
-  - src: /static/img/slider-image-3.png
+  - src: /static/img/slider-image-3.avif
     description: Garnishing snap peas with premium sea salt.
-  - src: /static/img/slider-image-4.png
+  - src: /static/img/slider-image-4.avif
     description: A delicious bowl of fresh vegetables.
 
 symbol_start: 🜳
-text_content: Discover the art of whole food cooking [%br%] enhance your culinary skills while nourishing [%br%] your body and soul, all from the comfort [%br%] of your own kitchen.
+text_content: Discover the art of whole food cooking [%br.md-screen-and-up%] enhance your culinary skills while nourishing [%br.md-screen-and-up%] your body and soul, all from the comfort [%br.md-screen-and-up%] of your own kitchen.
 symbol_end: 🝞
