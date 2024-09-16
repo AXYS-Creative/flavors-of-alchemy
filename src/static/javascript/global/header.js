@@ -49,6 +49,7 @@ if (headerBanner) {
     };
 
     const bannerText = `Don't miss our limited offer! 20% off all bundles! Offer ends ${getEndDate()}`;
+    // const bannerText = `Will this ever work? Probably not`;
 
     const messageTextSpan = document.querySelectorAll(".message-text");
 

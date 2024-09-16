@@ -99,8 +99,8 @@
   --background-color: #313131;
   --primary-font-color: #fafafa;
   --secondary-font-color: rgba(49, 49, 49, 0.5019607843);
-  --primary-accent-color: #d1b768;
-  --secondary-accent-color: #d982e0;
+  --primary-accent-color: #ebc554;
+  --secondary-accent-color: #7d71f0;
   --link-weight: 600;
 }
 
@@ -307,7 +307,7 @@ body > * {
 @media (prefers-reduced-motion: no-preference) {
   .site-header > * {
     opacity: 0;
-    animation: fade 0s linear 2.2s forwards;
+    animation: fade-in 0s linear 2.2s forwards;
   }
 }
 .site-header .header-banner {
@@ -367,7 +367,7 @@ body > * {
 }
 @media screen and (max-width: 480px) {
   .site-header .header-banner__message .marquee-slider {
-    animation-duration: 12s;
+    animation-duration: 4s;
   }
 }
 .site-header .header-banner__message .alchemy-symbol {
@@ -664,7 +664,7 @@ body > * {
   translate: 0 -480%;
   opacity: 1;
   pointer-events: all;
-  animation: fade 0.6s linear 0s reverse;
+  animation: fade-in 0.6s linear 0s reverse;
 }
 .site-header.away-from-top .header-links:focus-within {
   translate: 0 0;
@@ -1220,14 +1220,14 @@ ul.classic-list {
   left: 0;
   z-index: -1;
   opacity: 0;
-  animation: particle-fade 0.8s ease 2.4s forwards;
+  animation: particle-fade-in 0.8s ease 2.4s forwards;
 }
 @media screen and (max-width: 480px) {
   .particles {
-    animation: particle-fade-sm 0.8s ease 2.4s forwards;
+    animation: particle-fade-in-sm 0.8s ease 2.4s forwards;
   }
 }
-@keyframes particle-fade {
+@keyframes particle-fade-in {
   from {
     opacity: 0;
   }
@@ -1235,7 +1235,7 @@ ul.classic-list {
     opacity: 0.5;
   }
 }
-@keyframes particle-fade-sm {
+@keyframes particle-fade-in-sm {
   from {
     opacity: 0;
   }
@@ -1291,15 +1291,15 @@ ul.classic-list {
 }
 
 .gold {
-  color: #d1b768;
-  -webkit-text-stroke-color: #d1b768;
-  border-color: #d1b768;
+  color: #ebc554;
+  -webkit-text-stroke-color: #ebc554;
+  border-color: #ebc554;
 }
 
 .pink {
-  color: #d982e0;
-  -webkit-text-stroke-color: #d982e0;
-  border-color: #d982e0;
+  color: #7d71f0;
+  -webkit-text-stroke-color: #7d71f0;
+  border-color: #7d71f0;
 }
 
 .bold {
@@ -1368,7 +1368,7 @@ ul.classic-list {
     translate: -100% 0;
   }
 }
-@keyframes fade {
+@keyframes fade-in {
   from {
     opacity: 0;
     pointer-events: none;
@@ -1897,131 +1897,131 @@ ul.classic-list {
   .hero .h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(1), .hero h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(1),
   .pre-footer .h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(1),
   .pre-footer h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(1) {
-    animation: fade 0s linear 0.2s forwards;
+    animation: fade-in 0s linear 0.2s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(2), .hero h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(2),
   .pre-footer .h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(2),
   .pre-footer h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(2) {
-    animation: fade 0s linear 0.4s forwards;
+    animation: fade-in 0s linear 0.4s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(3), .hero h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(3),
   .pre-footer .h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(3),
   .pre-footer h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(3) {
-    animation: fade 0s linear 0.6s forwards;
+    animation: fade-in 0s linear 0.6s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(4), .hero h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(4),
   .pre-footer .h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(4),
   .pre-footer h1 .hero-h1__line:nth-of-type(1) .hero-h1__word:nth-of-type(4) {
-    animation: fade 0s linear 0.8s forwards;
+    animation: fade-in 0s linear 0.8s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(1), .hero h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(1),
   .pre-footer .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(1),
   .pre-footer h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(1) {
-    animation: fade 0s linear 1s forwards;
+    animation: fade-in 0s linear 1s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(2), .hero h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(2),
   .pre-footer .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(2),
   .pre-footer h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(2) {
-    animation: fade 0s linear 1.2s forwards;
+    animation: fade-in 0s linear 1.2s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(3), .hero h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(3),
   .pre-footer .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(3),
   .pre-footer h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(3) {
-    animation: fade 0s linear 1.4s forwards;
+    animation: fade-in 0s linear 1.4s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(4), .hero h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(4),
   .pre-footer .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(4),
   .pre-footer h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(4) {
-    animation: fade 0s linear 1.6s forwards;
+    animation: fade-in 0s linear 1.6s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(1), .hero h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(1),
   .pre-footer .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(1),
   .pre-footer h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(1) {
-    animation: fade 0s linear 1.6s forwards;
+    animation: fade-in 0s linear 1.6s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(2), .hero h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(2),
   .pre-footer .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(2),
   .pre-footer h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(2) {
-    animation: fade 0s linear 1.8s forwards;
+    animation: fade-in 0s linear 1.8s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(3), .hero h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(3),
   .pre-footer .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(3),
   .pre-footer h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(3) {
-    animation: fade 0s linear 2s forwards;
+    animation: fade-in 0s linear 2s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(4), .hero h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(4),
   .pre-footer .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(4),
   .pre-footer h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(4) {
-    animation: fade 0s linear 2.2s forwards;
+    animation: fade-in 0s linear 2.2s forwards;
   }
 }
 @media screen and (prefers-reduced-motion: no-preference) and (max-width: 768px) {
   .hero .h1 .hero-h1__line:nth-of-type(1) .hero-h1__word, .hero h1 .hero-h1__line:nth-of-type(1) .hero-h1__word,
   .pre-footer .h1 .hero-h1__line:nth-of-type(1) .hero-h1__word,
   .pre-footer h1 .hero-h1__line:nth-of-type(1) .hero-h1__word {
-    animation: fade 0s linear 0.4s forwards;
+    animation: fade-in 0s linear 0.4s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(1), .hero h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(1),
   .pre-footer .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(1),
   .pre-footer h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(1) {
-    animation: fade 0s linear 0.6s forwards;
+    animation: fade-in 0s linear 0.6s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(2), .hero h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(2),
   .pre-footer .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(2),
   .pre-footer h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(2) {
-    animation: fade 0s linear 0.8s forwards;
+    animation: fade-in 0s linear 0.8s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(3), .hero h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(3),
   .pre-footer .h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(3),
   .pre-footer h1 .hero-h1__line:nth-of-type(2) .hero-h1__word:nth-of-type(3) {
-    animation: fade 0s linear 1s forwards;
+    animation: fade-in 0s linear 1s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(1), .hero h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(1),
   .pre-footer .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(1),
   .pre-footer h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(1) {
-    animation: fade 0s linear 1.2s forwards;
+    animation: fade-in 0s linear 1.2s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(2), .hero h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(2),
   .pre-footer .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(2),
   .pre-footer h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(2) {
-    animation: fade 0s linear 1.4s forwards;
+    animation: fade-in 0s linear 1.4s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(3), .hero h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(3),
   .pre-footer .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(3),
   .pre-footer h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(3) {
-    animation: fade 0s linear 1.6s forwards;
+    animation: fade-in 0s linear 1.6s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(4), .hero h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(4),
   .pre-footer .h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(4),
   .pre-footer h1 .hero-h1__line:nth-of-type(3) .hero-h1__word:nth-of-type(4) {
-    animation: fade 0s linear 1.8s forwards;
+    animation: fade-in 0s linear 1.8s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(1), .hero h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(1),
   .pre-footer .h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(1),
   .pre-footer h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(1) {
-    animation: fade 0s linear 1.6s forwards;
+    animation: fade-in 0s linear 1.6s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(2), .hero h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(2),
   .pre-footer .h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(2),
   .pre-footer h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(2) {
-    animation: fade 0s linear 1.8s forwards;
+    animation: fade-in 0s linear 1.8s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(3), .hero h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(3),
   .pre-footer .h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(3),
   .pre-footer h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(3) {
-    animation: fade 0s linear 2s forwards;
+    animation: fade-in 0s linear 2s forwards;
   }
   .hero .h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(4), .hero h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(4),
   .pre-footer .h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(4),
   .pre-footer h1 .hero-h1__line:nth-of-type(4) .hero-h1__word:nth-of-type(4) {
-    animation: fade 0s linear 2.2s forwards;
+    animation: fade-in 0s linear 2.2s forwards;
   }
 }
 @media (prefers-reduced-motion: no-preference) {
   .hero .h1 .alchemy-symbol, .hero h1 .alchemy-symbol,
   .pre-footer .h1 .alchemy-symbol,
   .pre-footer h1 .alchemy-symbol {
-    animation: fade 0s linear 2s forwards;
+    animation: fade-in 0s linear 2s forwards;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2068,7 +2068,7 @@ ul.classic-list {
   .hero-actions,
   .pre-footer-actions {
     opacity: 0;
-    animation: fade 0s linear 2.2s forwards;
+    animation: fade-in 0s linear 2.2s forwards;
   }
 }
 .hero .paragraph-wrapper,
@@ -2098,7 +2098,7 @@ ul.classic-list {
   .hero .cta-wrapper,
   .pre-footer .cta-wrapper {
     opacity: 0;
-    animation: fade 0s linear 2.2s forwards;
+    animation: fade-in 0s linear 2.2s forwards;
   }
 }
 

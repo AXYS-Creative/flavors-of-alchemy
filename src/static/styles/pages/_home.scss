@@ -40,7 +40,7 @@
     // // GLOBAL
     // @include mq-motion-allow {
     //   opacity: 0;
-    //   animation: fade 0s linear 0.3s forwards;
+    //   animation: fade-in 0s linear 0.3s forwards;
 
     //   .outer-span {
     //     opacity: 0;
@@ -49,14 +49,14 @@
     //       $delay: 0.2s * $i;
 
     //       &:nth-of-type(#{$i}) {
-    //         animation: fade 0s linear $delay forwards;
+    //         animation: fade-in 0s linear $delay forwards;
     //       }
     //     }
     //   }
 
     //   .alchemy-symbol {
     //     opacity: 0;
-    //     animation: fade 0s linear 2s forwards;
+    //     animation: fade-in 0s linear 2s forwards;
     //   }
     // }
 
@@ -87,7 +87,7 @@
           .hero-h1__word {
             @for $i from 1 through 4 {
               &:nth-of-type(#{$i}) {
-                animation: fade 0s linear $step-delay * $i forwards;
+                animation: fade-in 0s linear $step-delay * $i forwards;
               }
             }
           }
@@ -97,7 +97,13 @@
           .hero-h1__word {
             @for $i from 1 through 4 {
               &:nth-of-type(#{$i}) {
-                animation: fade 0s linear $line-2 + $step-delay * $i forwards;
+                animation: fade-in
+                  0s
+                  linear
+                  $line-2 +
+                  $step-delay *
+                  $i
+                  forwards;
               }
             }
           }
@@ -107,7 +113,13 @@
           .hero-h1__word {
             @for $i from 1 through 4 {
               &:nth-of-type(#{$i}) {
-                animation: fade 0s linear $line-3 + $step-delay * $i forwards;
+                animation: fade-in
+                  0s
+                  linear
+                  $line-3 +
+                  $step-delay *
+                  $i
+                  forwards;
               }
             }
           }
@@ -118,7 +130,7 @@
       @include mq-max("md") {
         .hero-h1__line:nth-of-type(1) {
           .hero-h1__word {
-            animation: fade 0s linear $step-delay * 2 forwards;
+            animation: fade-in 0s linear $step-delay * 2 forwards;
           }
         }
 
@@ -126,7 +138,7 @@
           .hero-h1__word {
             @for $i from 1 through 3 {
               &:nth-of-type(#{$i}) {
-                animation: fade
+                animation: fade-in
                   0s
                   linear
                   $md-line-2 +
@@ -142,7 +154,7 @@
           .hero-h1__word {
             @for $i from 1 through 4 {
               &:nth-of-type(#{$i}) {
-                animation: fade
+                animation: fade-in
                   0s
                   linear
                   $md-line-3 +
@@ -158,7 +170,7 @@
           .hero-h1__word {
             @for $i from 1 through 4 {
               &:nth-of-type(#{$i}) {
-                animation: fade
+                animation: fade-in
                   0s
                   linear
                   $md-line-4 +
@@ -172,7 +184,7 @@
       }
 
       .alchemy-symbol {
-        animation: fade 0s linear $finish-time forwards;
+        animation: fade-in 0s linear $finish-time forwards;
       }
     }
 
@@ -208,7 +220,7 @@
 
     @include mq-motion-allow {
       opacity: 0;
-      animation: fade 0s linear $finish-time + $step-delay forwards;
+      animation: fade-in 0s linear $finish-time + $step-delay forwards;
     }
   }
 
@@ -234,7 +246,7 @@
   .cta-wrapper {
     @include mq-motion-allow {
       opacity: 0;
-      animation: fade 0s linear $finish-time + $step-delay forwards;
+      animation: fade-in 0s linear $finish-time + $step-delay forwards;
     }
   }
 }

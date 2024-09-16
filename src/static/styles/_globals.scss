@@ -38,7 +38,7 @@ body {
     @include mq-motion-allow {
       // Having this on the site-header caused strange z-index issues?
       opacity: 0;
-      animation: fade 0s linear $finish-time + $step-delay forwards;
+      animation: fade-in 0s linear $finish-time + $step-delay forwards;
     }
   }
 
@@ -54,10 +54,8 @@ body {
     transition: translate 0.3s ease, filter 0.3s ease;
     z-index: 6; // over nav links (becuase they move up and down on scroll)
 
-    @media all {
-      @include mq-max("xxl") {
-        height: $banner-height-xxl;
-      }
+    @include mq-max("xxl") {
+      height: $banner-height-xxl;
     }
 
     &:hover,
@@ -98,7 +96,7 @@ body {
           }
 
           @include mq-max("sm") {
-            animation-duration: 12s;
+            animation-duration: 4s;
           }
         }
       }
@@ -362,7 +360,7 @@ body {
       translate: 0 -480%;
       opacity: 1;
       pointer-events: all;
-      animation: fade 0.6s linear 0s reverse;
+      animation: fade-in 0.6s linear 0s reverse;
 
       &:focus-within {
         translate: 0 0;
@@ -852,14 +850,14 @@ ul {
   z-index: -1;
   // opacity: 0.5;
   opacity: 0;
-  animation: particle-fade 0.8s ease 2.4s forwards;
+  animation: particle-fade-in 0.8s ease 2.4s forwards;
 
   @include mq-max("sm") {
     // opacity: 0.75;
-    animation: particle-fade-sm 0.8s ease 2.4s forwards;
+    animation: particle-fade-in-sm 0.8s ease 2.4s forwards;
   }
 
-  @keyframes particle-fade {
+  @keyframes particle-fade-in {
     from {
       opacity: 0;
     }
@@ -868,7 +866,7 @@ ul {
     }
   }
 
-  @keyframes particle-fade-sm {
+  @keyframes particle-fade-in-sm {
     from {
       opacity: 0;
     }
