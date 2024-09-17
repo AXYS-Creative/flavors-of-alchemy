@@ -54,16 +54,20 @@
   }
 }
 
-.gold {
-  color: $gold;
-  -webkit-text-stroke-color: $gold;
-  border-color: $gold; // Added for price card hr. Delete if needed
+.color-primary {
+  color: var(--primary-accent-color);
+  -webkit-text-stroke-color: var(--primary-accent-color);
+  border-color: var(
+    --primary-accent-color
+  ); // Added for price card hr. Delete if needed
 }
 
-.pink {
-  color: $pink;
-  -webkit-text-stroke-color: $pink;
-  border-color: $pink; // Added for price card hr. Delete if needed
+.color-secondary {
+  color: var(--secondary-accent-color);
+  -webkit-text-stroke-color: var(--secondary-accent-color);
+  border-color: var(
+    --secondary-accent-color
+  ); // Added for price card hr. Delete if needed
 }
 
 .bold {

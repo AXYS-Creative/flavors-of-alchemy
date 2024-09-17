@@ -848,25 +848,10 @@ ul {
   top: 0;
   left: 0;
   z-index: -1;
-  // opacity: 0.5;
   opacity: 0;
   animation: particle-fade-in 0.8s ease 2.4s forwards;
 
-  @include mq-max("sm") {
-    // opacity: 0.75;
-    animation: particle-fade-in-sm 0.8s ease 2.4s forwards;
-  }
-
   @keyframes particle-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 0.5;
-    }
-  }
-
-  @keyframes particle-fade-in-sm {
     from {
       opacity: 0;
     }

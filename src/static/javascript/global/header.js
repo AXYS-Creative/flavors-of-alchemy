@@ -29,7 +29,7 @@ if (headerBanner) {
   })();
 
   //
-  // Template Banner Message (dynamic exp. date)
+  // Template Banner Message (dynamic exp. date) REMOVE FOR CLIENT
   const templateBannerMessage = (() => {
     const getEndDate = () => {
       const today = new Date();
@@ -49,7 +49,6 @@ if (headerBanner) {
     };
 
     const bannerText = `Don't miss our limited offer! 20% off all bundles! Offer ends ${getEndDate()}`;
-    // const bannerText = `Will this ever work? Probably not`;
 
     const messageTextSpan = document.querySelectorAll(".message-text");
 

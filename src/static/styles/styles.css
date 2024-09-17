@@ -100,7 +100,7 @@
   --primary-font-color: #fafafa;
   --secondary-font-color: rgba(49, 49, 49, 0.5019607843);
   --primary-accent-color: #ebc554;
-  --secondary-accent-color: #7d71f0;
+  --secondary-accent-color: #ff859d;
   --link-weight: 600;
 }
 
@@ -1222,20 +1222,7 @@ ul.classic-list {
   opacity: 0;
   animation: particle-fade-in 0.8s ease 2.4s forwards;
 }
-@media screen and (max-width: 480px) {
-  .particles {
-    animation: particle-fade-in-sm 0.8s ease 2.4s forwards;
-  }
-}
 @keyframes particle-fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
-}
-@keyframes particle-fade-in-sm {
   from {
     opacity: 0;
   }
@@ -1290,16 +1277,16 @@ ul.classic-list {
   }
 }
 
-.gold {
-  color: #ebc554;
-  -webkit-text-stroke-color: #ebc554;
-  border-color: #ebc554;
+.color-primary {
+  color: var(--primary-accent-color);
+  -webkit-text-stroke-color: var(--primary-accent-color);
+  border-color: var(--primary-accent-color);
 }
 
-.pink {
-  color: #7d71f0;
-  -webkit-text-stroke-color: #7d71f0;
-  border-color: #7d71f0;
+.color-secondary {
+  color: var(--secondary-accent-color);
+  -webkit-text-stroke-color: var(--secondary-accent-color);
+  border-color: var(--secondary-accent-color);
 }
 
 .bold {

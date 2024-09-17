@@ -1,23 +1,23 @@
 section_title: Services
 title_symbol: 🝆
-title_symbol_color: "gold"
+title_symbol_color: "color-primary"
 
 services:
   - title: Food Preparation Courses
     description: Master clean cooking with our hands-on courses. Learn essential techniques, from knife skills to batch cooking, and elevate your kitchen confidence with plant-based recipes.
     symbol: 🝲
-    symbol_color: "pink"
+    symbol_color: "color-secondary"
     image: /static/img/service-1.avif
     image_description: Presenting food on a dish and bowl
   - title: Whole Food Education
     description: Dive into the world of whole foods. Explore nutrient-dense meal planning, seasonal eating, and fermentation to enhance your vegan diet with flavor and nutrition.
     symbol: 🜻
-    symbol_color: "pink"
+    symbol_color: "color-secondary"
     image: /static/img/service-2.avif
     image_description: Bowls of different fresh produce
   - title: Utensil Maintenance Workshops
     description: Keep your kitchen tools in top shape. Learn the art of knife sharpening, eco-friendly utensil care, and proper cookware maintenance to support your vegan culinary journey.
     symbol: 🝚
-    symbol_color: "pink"
+    symbol_color: "color-secondary"
     image: /static/img/service-3.avif
     image_description: A kitchen knife and other cooking utensils

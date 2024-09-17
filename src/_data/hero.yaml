@@ -1,13 +1,13 @@
 hero_lists:
   - symbol: "🜾"
-    symbol_color: "gold"
+    symbol_color: "color-primary"
     hero_list_items:
       - title: Seasonal & Local Sourcing
       - title: Cookware Material Guide
       - title: Nutrient Dense Meals
       - title: Batch Cooking
   - symbol: "🜪"
-    symbol_color: "gold"
+    symbol_color: "color-primary"
     hero_list_items:
       - title: Fermentation & Preservation Skills
       - title: Proper Utensil Care & Handling

@@ -67,8 +67,8 @@ collections:
                   label: "Symbol Color",
                   widget: "select",
                   multiple: false,
-                  options: ["gold", "pink"],
-                  default: ["gold"],
+                  options: ["color-primary", "color-secondary"],
+                  default: ["color-primary"],
                   required: false,
                 }
               - name: "hero_list_items"
@@ -128,8 +128,8 @@ collections:
               label: "Section Title Symbol Color",
               widget: "select",
               multiple: false,
-              options: ["gold", "pink"],
-              default: ["gold"],
+              options: ["color-primary", "color-secondary"],
+              default: ["color-primary"],
               required: false,
             }
           - name: "services"
@@ -156,8 +156,8 @@ collections:
                   label: "Symbol Color",
                   widget: "select",
                   multiple: false,
-                  options: ["gold", "pink"],
-                  default: ["gold"],
+                  options: ["color-primary", "color-secondary"],
+                  default: ["color-primary"],
                   required: false,
                 }
               - {
@@ -248,8 +248,8 @@ collections:
               label: "Section Title Symbol Color",
               widget: "select",
               multiple: false,
-              options: ["gold", "pink"],
-              default: ["gold"],
+              options: ["color-primary", "color-secondary"],
+              default: ["color-primary"],
               required: false,
             }
           - name: "price_cards"
@@ -334,8 +334,8 @@ collections:
               label: "Section Title Symbol Color",
               widget: "select",
               multiple: false,
-              options: ["gold", "pink"],
-              default: ["gold"],
+              options: ["color-primary", "color-secondary"],
+              default: ["color-primary"],
               required: false,
             }
           - name: "team_members"
@@ -396,8 +396,8 @@ collections:
                   label: "Color",
                   widget: "select",
                   multiple: false,
-                  options: ["gold", "pink"],
-                  default: ["gold"],
+                  options: ["color-primary", "color-secondary"],
+                  default: ["color-primary"],
                   required: false,
                 }
       - name: "text_block_2"
@@ -450,8 +450,8 @@ collections:
             label: "Title Symbol Color"
             widget: "select"
             required: false
-            options: ["gold", "pink"]
-            default: ["gold"]
+            options: ["color-primary", "color-secondary"]
+            default: ["color-primary"]
           - name: "section_description"
             label: "Section Description"
             widget: "text"
@@ -464,8 +464,8 @@ collections:
             label: "Description Symbol Color"
             widget: "select"
             required: false
-            options: ["gold", "pink"]
-            default: ["gold"]
+            options: ["color-primary", "color-secondary"]
+            default: ["color-primary"]
           - name: "faq_items"
             label: "FAQ Items"
             label_singular: "FAQ item"

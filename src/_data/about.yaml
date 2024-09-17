@@ -1,6 +1,6 @@
 section_title: About Us
 title_symbol: 🝢
-title_symbol_color: "gold"
+title_symbol_color: "color-primary"
 
 team_members:
   - name: Jake Ryans
@@ -24,10 +24,10 @@ team_members:
 paragraph_details:
   - description: With a shared passion for vegan cuisine and a commitment to quality and taste, the Ryan brothers created a business that not only nourishes the body but also celebrates the art of plant-based cooking.
     symbol: 🝮
-    color: "gold"
+    color: "color-primary"
   - description: Jake, a seasoned chef with deep roots in European cuisine, brings his flair for bold flavors and innovative food preparation techniques.
     symbol: 🜩
-    color: "gold"
+    color: "color-primary"
   - description: Clyde, an expert in whole food nutrition with a background in traditional Asian cuisine, complements Jake's style with his knowledge of health and wellness.
     symbol: 🜯
-    color: "gold"
+    color: "color-primary"

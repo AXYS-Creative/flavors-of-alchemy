@@ -2,11 +2,11 @@ show_section: true
 
 section_title: FAQ
 title_symbol: 🝌
-title_symbol_color: "gold"
+title_symbol_color: "color-primary"
 
 section_description: Find the answers to your most pressing questions about our vegan culinary courses, whole food education, and utensil maintenance workshops. Discover how our services can enhance your cooking journey and support a plant-based lifestyle focused on quality and taste.
 section_description_symbol: 🝮
-description_symbol_color: "gold"
+description_symbol_color: "color-primary"
 
 faq_items:
   - question: What types of food preparation courses do you offer?
