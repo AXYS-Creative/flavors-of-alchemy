@@ -1,10 +1,8 @@
 .services {
   $border-width: 2px;
-  $border-width-md: 2px;
 
   .service-block {
     @include row-center(space-between);
-    border-top: $border-width solid var(--primary-font-color);
     padding: 64px 0;
 
     @media all {
@@ -16,18 +14,6 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
-      }
-
-      @include mq-max("md") {
-        border-width: $border-width-md;
-      }
-    }
-
-    &--last {
-      border-bottom: $border-width solid var(--primary-font-color);
-
-      @include mq-max("md") {
-        border-width: $border-width-md;
       }
     }
 
@@ -69,6 +55,59 @@
 
       @include mq-max("lg") {
         translate: -8px 0;
+      }
+    }
+
+    &__title,
+    &__description,
+    &__link {
+      @include mq-motion-allow {
+        opacity: 0;
+      }
+    }
+
+    &.animate {
+      @include mq-motion-allow {
+        .service-block__title,
+        .service-block__description,
+        .service-block__link {
+          opacity: 1;
+          transition: 1s ease 0.1s;
+
+          @include mq-max("md") {
+            transition: 1s ease 0.3s;
+          }
+        }
+
+        .service-block__description {
+          transition-delay: 0.2s;
+
+          @include mq-max("md") {
+            transition-delay: 0.4s;
+          }
+        }
+
+        .service-block__link {
+          transition-delay: 0.3s;
+
+          @include mq-max("md") {
+            transition-delay: 0.5s;
+          }
+        }
+      }
+    }
+  }
+
+  .service-divider {
+    border: none;
+    width: 0;
+    height: $border-width;
+    background: var(--primary-font-color);
+
+    &.animate {
+      @include mq-motion-allow {
+        width: 100%;
+        transition: 1.2s $cubic-ease;
       }
     }
   }

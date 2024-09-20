@@ -1714,7 +1714,6 @@ ul.classic-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 2px solid var(--primary-font-color);
   padding: 64px 0;
 }
 @media screen and (max-width: 1512px) {
@@ -1727,19 +1726,6 @@ ul.classic-list {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .services .service-block {
-    border-width: 2px;
-  }
-}
-.services .service-block--last {
-  border-bottom: 2px solid var(--primary-font-color);
-}
-@media screen and (max-width: 768px) {
-  .services .service-block--last {
-    border-width: 2px;
   }
 }
 .services .service-block__image {
@@ -1783,6 +1769,58 @@ ul.classic-list {
 @media screen and (max-width: 1024px) {
   .services .service-block__link {
     translate: -8px 0;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .services .service-block__title, .services .service-block__description, .services .service-block__link {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .services .service-block.animate .service-block__title,
+  .services .service-block.animate .service-block__description,
+  .services .service-block.animate .service-block__link {
+    opacity: 1;
+    transition: 1s ease 0.1s;
+  }
+}
+@media screen and (prefers-reduced-motion: no-preference) and (max-width: 768px) {
+  .services .service-block.animate .service-block__title,
+  .services .service-block.animate .service-block__description,
+  .services .service-block.animate .service-block__link {
+    transition: 1s ease 0.3s;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .services .service-block.animate .service-block__description {
+    transition-delay: 0.2s;
+  }
+}
+@media screen and (prefers-reduced-motion: no-preference) and (max-width: 768px) {
+  .services .service-block.animate .service-block__description {
+    transition-delay: 0.4s;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .services .service-block.animate .service-block__link {
+    transition-delay: 0.3s;
+  }
+}
+@media screen and (prefers-reduced-motion: no-preference) and (max-width: 768px) {
+  .services .service-block.animate .service-block__link {
+    transition-delay: 0.5s;
+  }
+}
+.services .service-divider {
+  border: none;
+  width: 0;
+  height: 2px;
+  background: var(--primary-font-color);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .services .service-divider.animate {
+    width: 100%;
+    transition: 1.2s cubic-bezier(0.18, 0.97, 0.47, 1);
   }
 }
 .services .cta-wrapper {

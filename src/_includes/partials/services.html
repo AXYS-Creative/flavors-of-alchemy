@@ -14,7 +14,10 @@
   </h2>
 
   {% for service in services_section.services %}
-  <div class="service-block {% if loop.last %}service-block--last{% endif %}">
+  <hr class="service-divider gsap-animate" aria-hidden="true">
+  <div
+    class="service-block {% if loop.last %}service-block--last{% endif %} gsap-animate"
+  >
     <img
       class="service-block__image"
       src="{{ service.image }}"
@@ -37,5 +40,17 @@
       Book now
     </a>
   </div>
-  {% endfor %} {% include "./cta-wrapper.html" %}
+
+  {% if loop.last %}
+  <hr
+    class="service-divider service-divider--last gsap-animate"
+    aria-hidden="true"
+  ></hr>
+  {% endif %}
+
+  <!-- prettier-ignore -->
+  {% endfor %}
+
+  <!-- prettier-ignore -->
+  {% include "./cta-wrapper.html" %}
 </section>
