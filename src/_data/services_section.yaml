@@ -10,13 +10,13 @@ services:
     image: /static/img/service-1.avif
     image_description: Presenting food on a dish and bowl
   - title: Whole Food Education
-    description: Dive into the world of whole foods. Explore nutrient-dense meal planning, seasonal eating, and fermentation to enhance your vegan diet with flavor and nutrition.
+    description: Dive into the world of whole foods. Explore nutrient-dense meal planning, seasonal eating, and fermentation to enhance your plant-based diet with flavor and nutrition.
     symbol: 🜻
     symbol_color: "color-secondary"
     image: /static/img/service-2.avif
     image_description: Bowls of different fresh produce
   - title: Utensil Maintenance Workshops
-    description: Keep your kitchen tools in top shape. Learn the art of knife sharpening, eco-friendly utensil care, and proper cookware maintenance to support your vegan culinary journey.
+    description: Keep your kitchen tools in top shape. Learn the art of knife sharpening, eco-friendly utensil care, and proper cookware maintenance to support your plant-based culinary journey.
     symbol: 🝚
     symbol_color: "color-secondary"
     image: /static/img/service-3.avif
