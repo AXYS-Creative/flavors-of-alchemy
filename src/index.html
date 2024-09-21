@@ -126,7 +126,11 @@ path: home
     <div class="paragraph-wrapper">
       {% for list in hero.hero_lists %}
       <ul>
-        <li class="{{ list.symbol_color }}" aria-hidden="true">
+        <li
+          class="{{ list.symbol_color }}"
+          style="color: {{ site_branding.color_primary }}"
+          aria-hidden="true"
+        >
           {{ list.symbol }}
         </li>
         {% for item in list.hero_list_items %}
