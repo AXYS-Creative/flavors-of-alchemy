@@ -6,8 +6,8 @@ $grey-dark: #313131;
 $grey-light: #31313180;
 $white: #fafafa;
 // $blue: #5555fc;
-$gold: #ebc554; // ensure hex code for particles.js
-$pink: #ff859d; // ensure hex code for particles.js
+$gold: #ebc554; // Use hex code for particles.js (not rgb, hsl, etc)
+$pink: #ff859d; // Use hex code for particles.js (not rgb, hsl, etc)
 
 // Easing
 $cubic-ease: cubic-bezier(0.18, 0.97, 0.47, 1);

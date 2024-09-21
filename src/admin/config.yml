@@ -488,3 +488,24 @@ collections:
             label: "FAQ Behavior (Single)"
             widget: "boolean"
             hint: "This option allows only one FAQ item to be opened at a time."
+  - name: "site_settings"
+    label: "Settings"
+    files:
+      - name: "site_branding"
+        label: "Branding"
+        file: "src/_data/site_branding.yaml"
+        preview_path: "#"
+        create: true
+        editor:
+          preview: false
+        fields:
+          - name: "color_primary"
+            label: "Color Primary"
+            widget: "color"
+            enableAlpha: false
+            allowInput: true
+          - name: "color_secondary"
+            label: "Color Secondary"
+            widget: "color"
+            enableAlpha: false
+            allowInput: true
