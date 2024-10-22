@@ -36,7 +36,7 @@ body {
     position: fixed;
 
     @include mq-motion-allow {
-      // Having this on the site-header caused strange z-index issues?
+      // Having the animation on the site-header caused strange z-index issues?
       opacity: 0;
       animation: fade-in 0s linear $finish-time + $step-delay forwards;
     }

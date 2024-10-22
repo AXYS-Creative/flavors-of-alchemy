@@ -131,12 +131,16 @@
         .hero-h1__line:nth-of-type(1) {
           .hero-h1__word {
             animation: fade-in 0s linear $step-delay * 2 forwards;
+
+            &:nth-of-type(3) {
+              animation: fade-in 0s linear $step-delay * 3 forwards;
+            }
           }
         }
 
         .hero-h1__line:nth-of-type(2) {
           .hero-h1__word {
-            @for $i from 1 through 3 {
+            @for $i from 1 through 4 {
               &:nth-of-type(#{$i}) {
                 animation: fade-in
                   0s
@@ -152,7 +156,7 @@
 
         .hero-h1__line:nth-of-type(3) {
           .hero-h1__word {
-            @for $i from 1 through 4 {
+            @for $i from 1 through 3 {
               &:nth-of-type(#{$i}) {
                 animation: fade-in
                   0s
