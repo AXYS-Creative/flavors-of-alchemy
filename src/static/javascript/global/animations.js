@@ -155,6 +155,8 @@ const animationLibrary = (() => {
 
   // SCOPED - Hero Sliding Text - Animating per line (smoother) ... Should be able to gauge the distance to apply the line...
   const mirageText = (() => {
+    const isLandscape = window.innerWidth > window.innerHeight;
+
     const lines = [
       {
         element: ".hero-h1__line-inner-1",
@@ -242,18 +244,20 @@ const animationLibrary = (() => {
       },
     ];
 
-    lines.forEach(({ element, trigger, start, end, markers }) => {
-      gsap.to(element, {
-        yPercent: 100,
-        scrollTrigger: {
-          trigger: trigger,
-          scrub: 1,
-          start: start,
-          end: end,
-          markers: markers,
-        },
+    if (isLandscape) {
+      lines.forEach(({ element, trigger, start, end, markers }) => {
+        gsap.to(element, {
+          yPercent: 100,
+          scrollTrigger: {
+            trigger: trigger,
+            scrub: 1,
+            start: start,
+            end: end,
+            markers: markers,
+          },
+        });
       });
-    });
+    }
   })();
 
   // Refresh ScrollTrigger instances on page load and resize. Game Changer
